@@ -37,20 +37,20 @@ jobs:
     #     key: ${{ secrets.SERVERCHAN_KEY}}
     #     text: 预约健身房(${{env.APPOINT_DATE}} ${{env.APPOINT_HOUR}})${{env.APPOINT_STATUS}}{消息标题}
     #     desp: 预约健身房(${{env.APPOINT_DATE}} ${{env.APPOINT_HOUR}})${{env.APPOINT_STATUS}}。在https://gym.byr.moe/my.php 中取消。
-    - name: Send mail
-      uses: dawidd6/action-send-mail@v3
-      with:
-        # smtp服务器，如果不是用腾讯企业邮，请修改
-        server_address: smtp.exmail.qq.com
-        # 端口，可能也需要修改 
-        server_port: 465
-        # Required mail server username:
-        username: ${{secrets.MAIL_SEND}}
-        # Required mail server password:
-        password: ${{secrets.MAIL_PASS}}
-        
-        # Required mail subject:
-        subject: 预约健身房(${{env.APPOINT_DATE}} ${{env.APPOINT_HOUR}})成功
-        to: ${{secrets.MAIL_RECV}}
-        from: 群健身房预约助手
-        body: 预约健身房(${{env.APPOINT_DATE}} ${{env.APPOINT_HOUR}})成功。在https://gym.byr.moe/my.php 中取消。
+#    - name: Send mail
+#      uses: dawidd6/action-send-mail@v3
+#      with:
+#        # smtp服务器，如果不是用腾讯企业邮，请修改
+#        server_address: smtp.exmail.qq.com
+#        # 端口，可能也需要修改
+#        server_port: 465
+#        # Required mail server username:
+#        username: ${{secrets.MAIL_SEND}}
+#        # Required mail server password:
+#        password: ${{secrets.MAIL_PASS}}
+#
+#        # Required mail subject:
+#        subject: 预约健身房(${{env.APPOINT_DATE}} ${{env.APPOINT_HOUR}})成功
+#        to: ${{secrets.MAIL_RECV}}
+#        from: 群健身房预约助手
+#        body: 预约健身房(${{env.APPOINT_DATE}} ${{env.APPOINT_HOUR}})成功。在https://gym.byr.moe/my.php 中取消。
