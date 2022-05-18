@@ -2,8 +2,6 @@ name: 'gym-appoint'
 
 on:
   push:
-    branches:
-      - main
   schedule:
      - cron: '30,0 14 * * 2,3,5,0'
 #    - cron: '3,8 12 * * 2,4,5,0'
