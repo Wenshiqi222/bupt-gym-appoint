@@ -128,7 +128,7 @@ next_date.setDate(new Date().getDate()+3)//预约最新一天
 next_date = date.format(next_date,"YYYYMMDD")
 
 core.exportVariable('APPOINT_DATE', next_date);
-hour = (time==="1")?"18:40-19:40":((time==="2")?"19:40-20:40":(time==="3"?"20:40-21:40":"未知"))
+hour = (time==="1")?"13:00-14:30":((time==="2")?"19:40-20:40":(time==="3"?"20:40-21:40":"未知"))
 core.exportVariable('APPOINT_HOUR', hour);
 console.log("将预约"+next_date+"第"+process.env.APPOINT_HOUR+"时段")
 
