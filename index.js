@@ -129,12 +129,7 @@ next_date = date.format(next_date,"YYYYMMDD")
 
 core.exportVariable('APPOINT_DATE', next_date);
 console.log("time 是.....",time)
-hour = ""
-if (time==="1"){
-   hour="13:00-14:30"
-}else{
-    hour="未知"
-}
+hour="13:00-14:30"
 core.exportVariable('APPOINT_HOUR', hour);
 console.log("将预约"+next_date+"第"+process.env.APPOINT_HOUR+"时段")
 
